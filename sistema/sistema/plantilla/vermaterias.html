@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block contenido %}
+<table border="1">
+			<tr>
+					<td>Numero</td>
+					<td>Nombre</td>
+					<td>Sigla</td>
+					<td>Nivel</td>
+				</tr>
+			{%for item in materia %}
+				
+				<tr>
+					<td>{{item.id}}</td>
+					<td>{{item.nombre}}</td>
+					<td>{{item.sigla}}</td>
+					<td>{{item.nivel}}</td>
+				</tr>
+			{%endfor%}
+		</table>
+	
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html"%}
+{% block contenido %}
+		FORMULARIO MATERIA:
+  		<form action="." method="POST">
+				{% csrf_token %}
+				{{form.as_p}}
+			<button class="btn btn-primary" type="submit">Enviar</a>
+            <button type="submit" class="btn btn-danger"><a href="/agregarnotas/">Siguiente</a></button>
+			
+		</form>
+	
+	
+		
+
+{% endblock %}
